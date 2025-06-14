@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to top, #000000d2,rgb(179, 19, 179), #ac1ad1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  resize: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid #00c6ff;
+  box-shadow: 0 12px 24px rgba(0, 198, 255, 0.4);
+  background: rgba(255, 255, 255, 0);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+select, input[type="range"], button {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Hover/Focus for interactivity */
+select:hover,
+input[type="range"]:hover,
+button:hover {
+  box-shadow: 0 12px 24px #00c8ff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Optional: For range input to style the thumb */
+input[type="range"]::-webkit-slider-thumb {
+  background: #00c6ff;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #00c6ff;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+select {
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+select option {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Show dropdown icon manually if needed */
+select::-ms-expand {
+  display: none;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00b7ff, #008cff);
+    
+}
