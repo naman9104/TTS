@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #49c93d, #91c457, #e6e229, rgb(252, 195, 72));
+  background: linear-gradient(to top, #2d332d, #242f52, #0e1f55,rgb(15, 52, 173));
   color: #fff;
   height: 100vh;
   display: flex;
@@ -75,24 +75,37 @@ select {
   min-width: 160px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 input[type="range"] {
+  -webkit-appearance: none;
   width: 100%;
-  appearance: none;
-  height: 6px;
-  background: #ccc;
-  border-radius: 4px;
+  height: 8px;
+  background: linear-gradient(to right, #00c6ff, #0072ff); /* track ka color */
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
   appearance: none;
-  height: 16px;
-  width: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background: #00c6ff;
-  cursor: pointer;
-  border: none;
+  background: #ffffff;
+  border: 2px solid #00c6ff;
+  box-shadow: 0 0 6px #00c6ff;
+  transition: 0.3s ease;
 }
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #00c6ff;
+  box-shadow: 0 0 6px #00c6ff;
+}
+
 
 button {
   background: linear-gradient(135deg, #0072ff, #00c6ff);
